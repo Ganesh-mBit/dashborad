@@ -1,8 +1,9 @@
 const initialState ={
   app: {
     openModal: false,
-    title: 'Create Contact',
-    contactList: []
+    title: '',
+    contactList: [],
+    selectedUser: {},
   },
   ajaxCallsInProgress: 0
 };

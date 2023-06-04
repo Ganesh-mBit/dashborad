@@ -15,6 +15,24 @@ export default function appReducer(currentState: any, action: appActions): any {
         openModal: action.payload
       };
 
+    case types.SET_CONTACT_DATA:
+      return {
+        ...state,
+        contactList: action.payload
+      };
+
+    case types.SET_TITLE:
+      return {
+        ...state,
+        title: action.payload
+      };
+
+    case types.SET_USER_DETAILS:
+      return {
+        ...state,
+        selectedUser: action.payload
+      };
+
     default:
       return state;
   }
