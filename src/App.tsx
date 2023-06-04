@@ -1,22 +1,13 @@
 import React from 'react';
 import {
   createBrowserRouter,
-  RouterProvider,
-  Outlet
+  RouterProvider
 } from "react-router-dom";
-import SideBar from './components/Sidebar';
 import Home from './Pages/Home';
 import './App.css';
 import Charts from './Pages/Charts';
 import Contact from './Pages/Contact';
-
-const Layout = () => {
-  return (
-    <SideBar>
-      <Outlet />
-    </SideBar>
-  )
-}
+import Layout from './components/Layout';
 
 const RouteProvider = createBrowserRouter([
   {
