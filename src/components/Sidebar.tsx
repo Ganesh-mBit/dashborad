@@ -27,7 +27,7 @@ const Sidebar: React.FC<SidebarProps> = ({ children }) => {
     },
     {
       icon: AiOutlineDotChart,
-      label: 'Chart & Maps',
+      label: 'Charts & Maps',
       active: pathname === '/charts',
       href: '/charts',
     },

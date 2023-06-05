@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { setModalState, setTitle } from '../redux/action/appActions';
+import { setModalState, setTitle, setUserDetails } from '../redux/action/appActions';
 import { isEmpty } from 'lodash';
 import ContactCard from '../components/ContactCard';
 
@@ -10,6 +10,7 @@ const Contact = () => {
 
   const handleAddContact = () => {
     dispatch(setTitle('Create New Contact'));
+    dispatch(setUserDetails({}));
     dispatch(setModalState(true));
   };
 
@@ -26,7 +27,7 @@ const Contact = () => {
         </div>
       </div>
       <hr className='py-6' />
-      <div className="flex flex-wrap -m-4">
+      <div className="flex flex-wrap">
         {
           !isEmpty(contactList)
             ? contactList?.map((item: any, id: number) => (
