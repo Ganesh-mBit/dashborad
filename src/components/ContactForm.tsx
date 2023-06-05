@@ -123,7 +123,7 @@ const ContactForm = () => {
                 {errors?.status ? errors?.status?.message : ''}
               </p>
             </div>
-            <button type="submit" className="w-full rounded-full py-1 px-3 bg-white hover:opacity-75 text-black font-bold uppercase">Add</button>
+            <button type="submit" className="w-full rounded-full py-1 px-3 bg-white hover:opacity-75 text-black font-bold uppercase">Save</button>
           </form>
         </div>
       </div>
